@@ -1,0 +1,161 @@
+:root {
+    --primary-c: #1f2937;
+    --secondary-c: #f9faf8;
+    --tertiary-c: #e5e7eb;
+    --accent-c: #3882f6;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url(./Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Italic';
+    src: url(./Roboto/Roboto-LightItalic.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--primary-c);
+    color: var(--tertiary-c);
+    padding: 0 180px;
+}
+
+header strong {
+    margin-right: auto;
+    font-size: 24px;
+}
+
+header a {
+    padding: 20px 15px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+#sec1 {
+    background-color: var(--primary-c);
+    color: var(--tertiary-c);
+    padding: 120px 180px;
+}
+
+#sec1 h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#sec1 p {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 5px 0 14px;
+
+}
+
+#sec1 a {
+    background-color: var(--accent-c);
+    color: var(--secondary-c);
+    display: inline-block;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+#sec2 {
+    padding: 20px 180px 80px;
+}
+
+#sec2 h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#sec2 div {
+    display: flex;
+    gap: 15px;
+    font-family: 'Light', sans-serif;
+}
+
+#sec3 {
+    background-color: var(--tertiary-c);
+    padding: 90px 0;
+}
+
+#sec3 div {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec3 p:nth-child(1) {
+    font-family: 'Italic';
+    font-size: 36px;
+}
+
+#sec3 p:nth-child(2) {
+    margin-left: auto;
+}
+
+#sec4 {
+    padding: 80px 180px;
+}
+
+#sec4 > div {
+    display: flex;
+    background-color: var(--accent-c);
+    padding: 45px 100px;
+    color: var(--secondary-c);
+    align-items: center;
+    border-radius: 6px;
+}
+
+#sec4 > div div {
+    flex: 0 1 75%;
+}
+
+#sec4 h2, #sec4 p {
+    margin: 0;
+}
+
+#sec4 p {
+    font-family: 'Light', sans-serif;
+}
+
+#sec4 a {
+    margin-left: auto;
+    border: 2px solid var(--secondary-c);
+    background-color: var(--accent-c);
+    color: var(--secondary-c);
+    padding: 6px 20px;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: var(--primary-c);
+    color: var(--tertiary-c);
+    text-align: center;
+    padding: 20px 180px;
+    margin: 0;
+}
