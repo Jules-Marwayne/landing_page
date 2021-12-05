@@ -40,7 +40,7 @@ header {
     align-items: center;
     background-color: var(--primary-c);
     color: var(--tertiary-c);
-    padding: 0 180px;
+    padding: 0 12vw;
 }
 
 header strong {
@@ -49,7 +49,7 @@ header strong {
 }
 
 header a {
-    padding: 20px 15px;
+    padding: 20px 25px;
     font-size: 18px;
     font-weight: 200;
 }
@@ -58,19 +58,25 @@ header a {
 #sec1 {
     background-color: var(--primary-c);
     color: var(--tertiary-c);
-    padding: 120px 180px;
+    padding: 20px 12vw;
+    display: flex;
+    align-items: center;
+}
+
+#sec1 div {
+    flex: 1;
 }
 
 #sec1 h1 {
     font-size: 48px;
     margin: 0;
+    text-transform: capitalize;
 }
 
 #sec1 p {
     font-size: 18px;
     font-weight: 200;
     margin: 5px 0 14px;
-
 }
 
 #sec1 a {
@@ -82,19 +88,36 @@ header a {
     border-radius: 6px;
 }
 
+#sec1 img {
+    max-width: 400px;
+    height: auto;
+    flex: 0 1;
+}
+
 #sec2 {
     padding: 20px 180px 80px;
 }
 
 #sec2 h2 {
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 60px;
 }
 
 #sec2 div {
     display: flex;
-    gap: 15px;
+    justify-content: space-around;
     font-family: 'Light', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+svg {
+    display: inline-block;
+    transform: scale(3);
+    margin: 15px auto;
 }
 
 #sec3 {
@@ -112,6 +135,7 @@ header a {
 #sec3 p:nth-child(1) {
     font-family: 'Italic';
     font-size: 36px;
+    margin: 0;
 }
 
 #sec3 p:nth-child(2) {
